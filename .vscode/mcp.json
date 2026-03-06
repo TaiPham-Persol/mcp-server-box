@@ -1,17 +1,14 @@
 {
-	"servers": {
-		"my-mcp-server-0cb58fb7": {
-			"url": "http://localhost:8001/mcp",
-			"type": "http"
-		},
-		"my-mcp-server-2009ba70": {
-			"url": "http://my.host.local:8005/sse",
-			"type": "sse"
-		},
-		"box-community": {
-			"url": "https://mcp.barduino.net/mcp",
-			"type": "http"
-		}
-	},
-	"inputs": []
+  "servers": {
+    "box": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "~/mcp-server-box",
+        "run",
+        "src/mcp_server_box.py"
+      ]
+    }
+  },
+  "inputs": []
 }
